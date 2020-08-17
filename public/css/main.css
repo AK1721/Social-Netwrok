@@ -1,0 +1,183 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Recursive', sans-serif;
+}
+a{
+  color: #000;
+}
+a:hover{
+  color: #000;
+  text-decoration: none;
+}
+.main{
+  background-image: url(../images/pexels-belle-co-1000444.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.log-reg-main{
+  padding: 20px;
+  background-color: #FFF2E2;
+  background-image: url(../images/triangles-background-geometric-decor-geometricshapes-de-806945.png);
+  background-size: unset;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.dark-layout{
+  width: 100%;
+  height: 100%;
+  background-color: #0005;
+  color: #fff;
+}
+.content{
+  padding-top: 200px;
+  /* max-width: 800px; */
+}
+.main .content .brand-logo{
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+.main .content h1{
+  font-weight: 800;
+}
+.main .content h3{
+  margin-top: 50px;
+}
+.main .btn-container{
+  margin-top: 200px;
+}
+.btn{
+  width: 175px;
+  margin: 10px;
+  background-color: #0000;
+  color: #BFAE8E;
+  border-radius:20px;
+  border: 1px solid #BFAE8E;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s;
+}
+.btn:hover{
+  color: #fff;
+  background-color: #BFAE8E;
+}
+.btn::after{
+  content: "";
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius:20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.4s ease-out;
+}
+.btn:hover::after{
+  transform: scale(1.5, 1.5);
+  background-color: #BFAE8E;
+  opacity: 0;
+}
+.post{
+  margin: 20px 0px;
+  padding: 0px 10px;
+  border-left: 3px solid rgb(61, 0, 0);
+}
+.post span{
+  color: #7a7a7a;
+  font-style: italic;
+}
+.my-card{
+  padding: 40px 20px;
+  width: 350px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: #0003 0px 10px 60px;
+}
+.my-card h2{
+  margin-bottom: 20px;
+}
+.my-card-post{
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background-color: #fff;
+  box-shadow: #0003 0px 10px 60px;
+}
+.my-card-post .header .avatar{
+  width: 60px;
+  height: 60px;
+  float: left;
+  
+}
+.my-card-post .header .avatar img{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.my-card-post .header .info{
+  padding-left: 70px;
+  padding-top: 4px;
+}
+.my-card-post .header .info p{
+  font-style: italic;
+  color: rgb(136, 136, 136);
+}
+.my-card-post .actions {
+  text-align: center;
+}
+.my-card-post .actions a{
+  color: #BFAE8E;
+}
+.my-card-post .actions i{
+  font-size: 30px;
+  
+}
+.liked{
+  color: rgb(0, 238, 52) !important;
+}
+.liked:hover{
+  color: rgb(0, 170, 37) !important;
+}
+.disliked{
+  color: red !important;
+}
+.disliked:hover{
+  color: rgb(172, 0, 0) !important ;
+}
+.user{
+  min-height: 485px;
+}
+.my-card-post .main-avatar, .my-card .main-avatar{
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.my-card-post .main-avatar img, .my-card .main-avatar img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.my-card-post .actions .action{
+  width: 100%;
+  background-color: #BFAE8E;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.my-card-post .actions .action:hover{
+  background-color: #fff;
+  border: solid 1px #BFAE8E;
+  color: #BFAE8E;
+}
